@@ -25,7 +25,7 @@ SECRET_KEY = "n*z@*&0ein2+poiu$rhkv2c0a@^2gbzg=g!_e%+dz#2ik5f$g2"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["azmi.net", "albadr.net","test.net","wajadiri.net","albadr.amija.com.my", "68.183.239.191" ]
+ALLOWED_HOSTS = ["azmi.net", "albadr.net","*","abuzahrah.net","albadr.amija.com.my", "68.183.239.191" ,"192.168.0.103"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -45,9 +45,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework.authtoken",
-    "polls",
-    "tenants",
-    "testtenant.apps.TesttenantConfig",
+    # "polls",
+    # "tenants",
+    # "testtenant.apps.TesttenantConfig",
 ]
 
 MIDDLEWARE = [
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "my_django_app.urls"
+ROOT_URLCONF = "albadr.urls"
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     }
 ]
 
-WSGI_APPLICATION = "my_django_app.wsgi.application"
+WSGI_APPLICATION = "albadr.wsgi.application"
 
 
 # Database
@@ -97,6 +97,15 @@ DATABASES = {
         'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
         'PORT': os.environ.get('DB_PORT', '5432'),
     }
+
+# 'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': "albadr",
+#         'USER': "abuzahrah",
+#         'PASSWORD': "zahrah@75",
+#         'HOST':"127.0.0.1",
+#         'PORT': "8107",
+#     }
 }
 
 
