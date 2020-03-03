@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # "polls",
     # "tenants",
     # "testtenant.apps.TesttenantConfig",
+    "home.apps.HomeConfig",
 ]
 
 MIDDLEWARE = [
