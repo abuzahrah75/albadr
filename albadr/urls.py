@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from tugasan.views import apiappdata
+
 urlpatterns = [
     path("admin/", admin.site.urls), 
     path("", include("home.urls")),
-    # path("", include("polls.urls")),
+    path("home", include("home.urls")),
+    path("dokumen", include("dokumen.urls")),
+    path("tugasan/", include("tugasan.urls")),
     # path("cuba/", include("testtenant.urls")),
+    # for testing api
+    # path("api/appdata", apiappdata),
 ]

@@ -21,6 +21,8 @@ urlpatterns = [
         CreateVote.as_view(),
         name="polls_list",
     ),
+
+    
 ]
 
 urlpatterns += router.urls
