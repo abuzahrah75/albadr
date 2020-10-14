@@ -25,7 +25,7 @@ SECRET_KEY = "n*z@*&0ein2+poiu$rhkv2c0a@^2gbzg=g!_e%+dz#2ik5f$g2"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["azmi.net", "albadr.net","*","abuzahrah.net","albadr.amija.com.my", "68.183.239.191" ,"192.168.0.103"]
+ALLOWED_HOSTS = ["*"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -152,6 +152,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://abuzahrah.com',
     'http://localhost:3000',
     'http://tugasan.abuzahrah.com',
+    'http://192.168.43.98:3000',
 ]
 
 # CORS_ORIGIN_ALLOW_ALL=True
