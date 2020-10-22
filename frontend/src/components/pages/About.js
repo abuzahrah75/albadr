@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
     return (
         <div>
-            <h1>About Abu Zahrah</h1>
+            <h1>About albadr.abuzahrah.com</h1>
         </div>
     )
 }

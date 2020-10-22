@@ -27,7 +27,7 @@ export default function Navbar() {
         <Toolbar>
           <MyMenu />
           <Typography variant="h6" className={classes.title}>
-           abuzahrah.com
+           albadr.abuzahrah.com
           </Typography>
           
         </Toolbar>

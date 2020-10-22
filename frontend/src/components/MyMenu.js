@@ -36,8 +36,8 @@ export default function MyMenu(props) {
         onClose={handleClose}
       >
         <MenuItem onClick={()=> menuClicked('/')}>Home</MenuItem>
-        <MenuItem onClick={()=> menuClicked('/projek')}>Senarai Projek</MenuItem>
-        <MenuItem onClick={()=> menuClicked('/about')}>About Abu Zaharah</MenuItem>
+        <MenuItem onClick={()=> menuClicked('/projek')}>My Digital Docs</MenuItem>
+        <MenuItem onClick={()=> menuClicked('/about')}>About albadr</MenuItem>
 
 {/* 
         <MenuItem onClick={()=> menuClicked('/tobuy')}>To Buy</MenuItem>

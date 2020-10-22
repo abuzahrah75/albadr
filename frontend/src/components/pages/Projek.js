@@ -1,9 +1,13 @@
 import React from 'react'
+// import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 function Projek() {
     return (
         <div>
-            <h1>Senarai Projek</h1>
+            <Typography variant="h6">
+           Digital Documents Projects List
+          </Typography>
         </div>
     )
 }
