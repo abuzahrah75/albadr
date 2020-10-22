@@ -18,10 +18,11 @@ from django.urls import path, include
 
 # from tugasan.views import apiappdata
 from rest_framework.authtoken import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path("admin/", admin.site.urls), 
-    path("", include("home.urls")),
+   
     path('api-token-auth/', views.obtain_auth_token),
     
     path("home", include("home.urls")),
@@ -32,4 +33,8 @@ urlpatterns = [
 
     # FOR API
     path("api/tugasan/", include("tugasan.api.urls")),
+
+
+    ## for frontend
+    path('', TemplateView.as_view(template_name='index.html')),
 ]

@@ -35,7 +35,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-build/
+#build/
 develop-eggs/
 dist/
 downloads/
@@ -87,3 +87,26 @@ local_settings.py
 
 .env
 db.sqlite3
+
+### frontend (react)
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# testing
+/frontend//coverage
+
+# production
+#/build
+
+# misc
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*

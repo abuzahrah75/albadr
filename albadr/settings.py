@@ -72,7 +72,10 @@ ROOT_URLCONF = "albadr.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        'DIRS': [
+            ### Add code below for react in django
+            os.path.join(BASE_DIR,'frontend/build'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -156,3 +159,8 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 # CORS_ORIGIN_ALLOW_ALL=True
+
+### Add code below for react in django
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, 'frontend/build/static'),
+]
