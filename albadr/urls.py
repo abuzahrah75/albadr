@@ -33,7 +33,10 @@ urlpatterns = [
 
     # FOR API
     path("api/tugasan/", include("tugasan.api.urls")),
+    path("api/dokumen/", include("dokumen.api.urls")),
 
+    ## for other apps
+    path('cobaang', TemplateView.as_view(template_name='index.html')),
 
     ## for frontend
     path('', TemplateView.as_view(template_name='index.html')),
